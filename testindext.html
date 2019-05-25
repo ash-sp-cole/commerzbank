@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <!-- UIkit CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/css/uikit.min.css" />
+<link href="https://fonts.googleapis.com/css?family=Nunito+Sans|Permanent+Marker" rel="stylesheet">
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
+
+<!-- UIkit JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/uikit/3.1.5/js/uikit-icons.min.js"></script>
+<script src="http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.7/ScrollMagic.min.js"></script>
+
+
+
+<style>
+
+
+*
+{
+  margin: 0;
+  padding: 0;
+}
+
+.parallax 
+{
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0)   0%, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("frankCity.jpg");
+    min-height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    font-family: 'Permanent Marker';
+    letter-spacing: 0.3em;
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.frontpage_text 
+{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+.text
+{
+    color: #ffffff;
+    font-family: 'Nunito Sans';
+    width: 500px;
+    letter-spacing: 0.1em;
+    line-height: 30px;
+    text-align: center;
+}
+
+#content
+{
+    background-image: url(sea.jpeg);
+    box-sizing: border-box;
+    height: 100vh;
+    background-attachment: scroll;
+    background-size: cover;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity:0.7;
+}
+#content:hover
+{
+opacity: 0.9
+
+}
+
+
+
+#contentVid
+{
+    background-image: url(forest.jpg);
+    box-sizing: border-box;
+    height: 100vh;
+    background-attachment: scroll;
+    background-size: cover;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity:0.7;
+}
+
+#contentVid:hover
+{
+opacity: 0.9
+
+}
+
+
+#contentContact
+{
+   background-color:#262626;
+    box-sizing: border-box;
+    height: 15vh;
+    background-attachment: scroll;
+    background-size: cover;
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#contentContact:hover {
+
+
+opacity: 0.9;
+
+}
+::selection
+{
+    background:#ffffff;
+}
+
+/* 
+
+animation  */
+
+
+
+h1 {
+color: white;
+
+}
+h4{
+color: white;
+
+
+}
+html {
+  scroll-behavior: smooth;
+}
+
+.cd-top--is-visible { // back-to-top button visible
+  visibility: visible;
+  opacity: 1;
+}
+
+.cd-top--fade-out { // reduce button opacity if user keeps scrolling
+  opacity: .5;
+}
+
+
+.Iam {
+  padding: 2em 5em;
+  font: normal 40px/50px Montserrat, sans-serif;
+  color: #999;
+}
+.Iam p {
+  height: 50px;
+  float: left;
+  margin-right: 0.3em;
+}
+.Iam b {
+  float: left;
+  overflow: hidden;
+  position: relative;
+  height: 50px;
+  top: 40px;
+}
+.Iam .innerIam {
+  display: inline-block;
+  color: #e74c3c;
+  position: relative;
+  white-space: nowrap;
+  top: 0;
+  left: 0;
+
+
+/*animation*/
+-webkit-animation:move 9s;
+   -moz-animation:move 9s;
+    -ms-animation:move 9s;
+     -o-animation:move 9s;
+        animation:move 14s;
+/*animation-iteration-count*/
+-webkit-animation-iteration-count:infinite;
+   -moz-animation-iteration-count:infinite;
+    -ms-animation-iteration-count:infinite;
+     -o-animation-iteration-count:infinite;
+        animation-iteration-count:infinite;
+/*animation-delay*/
+-webkit-animation-delay:4s;
+   -moz-animation-delay:4s;
+    -ms-animation-delay:4s;
+     -o-animation-delay:4s;
+        animation-delay:4s;
+}
+@keyframes move{
+0%  { top: 0px; }
+20% { top: -50px; }
+40% { top: -100px; }
+60% { top: -150px; }
+80% { top: -200px; }
+}
+
+@-webkit-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-moz-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@-o-keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+@keyframes move {
+    0%  { top: 0px; }
+    20% { top: -50px; }
+    40% { top: -100px; }
+    60% { top: -150px; }
+    80% { top: -200px; }
+}
+
+
+#return-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    width: 50px;
+    height: 50px;
+    display: block;
+    text-decoration: none;
+    -webkit-border-radius: 35px;
+    -moz-border-radius: 35px;
+    border-radius: 35px;
+    display: none;
+    -webkit-transition: all 0.3s linear;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top i {
+    color: #fff;
+    margin: 0;
+    position: relative;
+    left: 16px;
+    top: 13px;
+    font-size: 19px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+#return-to-top:hover {
+    background: rgba(0, 0, 0, 0.9);
+}
+#return-to-top:hover i {
+    color: #fff;
+    top: 5px;
+}
+
+
+
+</style>
+    
+</head>
+
+
+<body>
+
+        <script src="js/scrollmagic/uncompressed/ScrollMagic.js"></script>
+  <section class="parallax" id="top">
+        <nav class="uk-navbar-container uk-margin" uk-navbar data-uk-sticky >
+                <div class="uk-navbar-center">
+            
+                    <div class="uk-navbar-center-left"><div>
+                        <ul class="uk-navbar-nav">
+                            <li class="uk-active"><a href="#content">Watch  <br> <i class="fas fa-play"></i></a></li>
+                            <li>
+                                <a href="#">Learn More <br> <i class="fas fa-book-reader"></i></a>
+                                <div class="uk-navbar-dropdown">
+                                    <ul class="uk-nav uk-navbar-dropdown-nav">
+                                        <li class="uk-active"><a href="#contentVid">About me</a></li>
+                                        <li><a href="#">Resume</a></li>
+                                      
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
+                    </div></div>
+                    <a class="uk-navbar-item uk-logo" href="#">Niels Fahrenkrog</a>
+                    <div class="uk-navbar-center-right"><div>
+                        <ul class="uk-navbar-nav">
+                            <li><a href="#contentContact">Contact <br> <i class="fas fa-id-card"></i></a></li>
+                            <li><a href="#top">  <i class="fas fa-arrow-circle-up fa-2x" style="align-self:right"></i></a></li>
+                        </ul>
+                    </div></div>
+            
+                </div>
+            </nav>
+    <div class="frontpage_text">
+                    
+
+   
+         
+          
+          
+    </div>
+  </section>
+  <section id="content" >
+  
+                  
+            <div class="Iam">
+
+                    <p>We need</p>
+                    <b>
+                      <div class="innerIam">
+                        to create<br /> 
+                        to imagine<br />
+                       
+                        to understand<br />
+                        to dream
+                        </div>
+                    </b>
+                    
+                    </div>
+                    <div class="text">
+
+             
+                <button class="uk-button uk-button-default uk-margin" type="button" uk-toggle="target: +"><h4> Press to begin  <br> <i class="fas fa-play"></i></h4></button>
+
+                <video src="https://yootheme.com/site/images/media/yootheme-pro.mp4" controls playsinline hidden uk-video></video>
+           
+            </div>
+        </section>
+        <section class="parallax ">
+
+         
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>     
+            <br>
+            <br>
+            <br>
+                <div  id="textCreate">
+                        <link href='https://fonts.googleapis.com/css?family=Cabin+Condensed:700' rel='stylesheet' type='text/css'>
+
+                        <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                             width="950px" height="240px" xml:space="preserve">
+                          <defs>
+                            <pattern id="water" width=".25" height="1.1" patternContentUnits="objectBoundingBox">
+                              <path fill="#000" d="M0.25,1H0c0,0,0-0.659,0-0.916c0.083-0.303,0.158,0.334,0.25,0C0.25,0.327,0.25,1,0.25,1z"/>
+                            </pattern>
+                            
+                            <text id="text" transform="translate(2,116)" font-family="'Cabin Condensed'" font-size="161.047">Commerzbank
+                            </text>
+                            
+                            <mask id="text-mask">
+                              <use x="0" y="0" xlink:href="#text" opacity="1" fill="#ffffff"/>
+                            </mask>
+                            
+                            <g id="eff">
+                              <use x="0" y="0" xlink:href="#text" fill="#a2a3a5"/>
+                          
+                          <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" x="-300" y="50" width="1200" height="120" opacity="0.3">
+                            <animate attributeType="xml" attributeName="x" from="-300" to="0" repeatCount="indefinite" dur="2s"/>
+                          </rect>
+                           <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="45" width="1600" height="120" opacity="0.3">
+                            <animate attributeType="xml" attributeName="x" from="-400" to="0" repeatCount="indefinite" dur="3s"/>
+                          </rect>
+                              
+                          <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="55" width="800" height="120" opacity="0.3">
+                            <animate attributeType="xml" attributeName="x" from="-200" to="0" repeatCount="indefinite" dur="1.4s"/>
+                          </rect>
+                              <rect class="water-fill" mask="url(#text-mask)" fill="url(#water)" y="55" width="2000" height="120" opacity="0.3">
+                            <animate attributeType="xml" attributeName="x" from="-500" to="0" repeatCount="indefinite" dur="2.8s"/>
+                          </rect>
+                            </g>
+                          </defs>
+                         
+                              <use xlink:href="#eff" opacity="0.9" style="mix-blend-mode:color-burn"/>
+                        
+                        </svg>
+                        
+        </section>
+            </div>
+        </section>
+
+
+        <section id="contentVid" class="learn">
+           
+                                <div class="text" >
+                            <h1>About me</h1>
+                            <a class="uk-button uk-button-default" href="#modal-full" uk-toggle style="color:black">Open</a>
+
+<div id="modal-full" class="uk-modal-full" uk-modal>
+    <div class="uk-modal-dialog">
+        <button class="uk-modal-close-full uk-close-large" type="button" uk-close></button>
+        <div class="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" uk-grid>
+            <div class="uk-background-cover" style="background-image: url('tree.jpeg');" uk-height-viewport></div>
+            <div class="uk-padding-large">
+                <h1>Headline</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            </div>
+        </div>
+    </div>
+</div>
+                           </div>
+               
+                    </section>
+                    <section class="parallax ">
+
+                          
+                    </section>
+                        </div>
+
+                        
+                    </section>
+
+
+                    
+        <section id="contentContact">
+           
+                <div class="text" >
+           
+            <img src="logo.png" alt="Girl in a jacket" >
+            <h4>Contact</h4>
+           </div>
+         
+    </section>
+  
+    </body>
+   <script>
+ // ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});
+   </script>
+</html>
+</body>
+</html>
+
+
