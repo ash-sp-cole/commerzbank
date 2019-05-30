@@ -21,6 +21,9 @@
     text-align: center;
     height: auto;
     width: auto;
+      max-width: 100%;
+
+    justify-content: center;
 }
 
 .frontpage_text 
@@ -268,4 +271,6 @@ html {
 
     text-align: center;
 }
+
+
 
